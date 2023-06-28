@@ -2,7 +2,7 @@ This is a source code for [Setting up Keycloak SSO authentication flow and conne
 
 ## Steps to run an example
 
-1. Run stack
+### Run stack
 
 Run Keycloak:
 
@@ -32,14 +32,14 @@ docker run --rm -it -p 8000:8000 \
 docker-compose up -d
 ```
 
-2. Configure Keycloak
+### Configure Keycloak
 
 1. Create `myrealm`
 2. Create `myclient`. Set valid redirect URIs `http://localhost:5173/*`, web origins as `http://localhost:5173`.
 3. Create `myuser`, set password to it.
 
 
-3. Run this app:
+### Run this app:
 
 ```
 npm install
